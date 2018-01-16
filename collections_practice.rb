@@ -43,5 +43,5 @@ end
 
 def find_cool(arr)
   print arr
-  
+
 end
