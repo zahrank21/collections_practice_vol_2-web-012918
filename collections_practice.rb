@@ -18,5 +18,8 @@ def count_elements(arr)
   counter_hash = Hash.new(0)
   arr.each {|el|
   counter_hash[el] += 1}
-  counter_hash
+  result = []
+  counter_hash.each do |name, count|
+    result << {:name => name[:name], :count => count}
+  end
 end
