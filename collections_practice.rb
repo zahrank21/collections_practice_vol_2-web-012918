@@ -53,7 +53,7 @@ def organize_schools(hash)
  location_hash = Hash.new([])
   hash.each do |school, loc|
     location_hash[loc[:location]] << school
-    
+
   end
   location_hash
 end
