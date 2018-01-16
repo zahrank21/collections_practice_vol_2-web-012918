@@ -27,7 +27,7 @@ end
 
 def merge_data(keys, data)
   keys.values.each do |name|
-    if data.keys.inlcude?(name)
+    if data.keys.include?(name)
       data[name][:first_name] = name
     end
   end
