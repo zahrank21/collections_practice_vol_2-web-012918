@@ -42,6 +42,8 @@ def merge_data(keys, data)
 end
 
 def find_cool(arr)
-  print arr
+  arr.select do |ind_hash|
+    ind_hash[:temperature] == "cool"
+  end
 
 end
