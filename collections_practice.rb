@@ -28,8 +28,10 @@ end
 def merge_data(keys, data)
   print data
   keys.each do |name_hash|
-    if data.keys.include?(name_hash.values.first)
-      data[name_hash.values.first] << name_hash
+    data.each do |data_hash|
+      if data_hash.keys.include?(name_hash.values.first)
+        data[name_hash.values.first] << name_hash
+      end
     end
   end
   data
