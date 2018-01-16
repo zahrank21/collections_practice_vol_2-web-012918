@@ -26,7 +26,10 @@ def count_elements(arr)
 end
 
 def merge_data(keys, data)
-print keys
-
-print data
+  keys.values.each do |name|
+    if data.keys.inlcude?(name)
+      data[name] << :first_name=>name
+    end
+  end
+  data
 end
