@@ -50,4 +50,6 @@ end
 
 def organize_schools(arr)
  print arr
+ location_hash = Hash.new([])
+ 
 end
