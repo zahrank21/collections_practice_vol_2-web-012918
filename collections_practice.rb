@@ -26,9 +26,9 @@ def count_elements(arr)
 end
 
 def merge_data(keys, data)
-  keys.values.each do |name|
-    if data.keys.include?(name)
-      data[name][:first_name] = name
+  keys.each do |name_hash|
+    if data.keys.include?(name_hash.values.first)
+      data[name_hash.values.first] << name_hash
     end
   end
   data
