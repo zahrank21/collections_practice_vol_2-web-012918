@@ -26,10 +26,10 @@ def count_elements(arr)
 end
 
 def merge_data(keys, data)
-  result = [] 
-     data.select do |ind_data| 
-       ind_data.each do |name1, data| 
-         keys.each do |key| 
+  result = []
+     data.select do |ind_data|
+       ind_data.each do |name1, data|
+         keys.each do |key|
            key.each do |key2, name2|
              if name1 == name2
                result << key.merge(data)
