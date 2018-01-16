@@ -48,8 +48,12 @@ def find_cool(arr)
 
 end
 
-def organize_schools(arr)
- print arr
+def organize_schools(hash)
+ print hash
  location_hash = Hash.new([])
- 
+  hash.each do |school, loc|
+    location_hash[loc[:location]] << school
+    
+  end
+  location_hash
 end
