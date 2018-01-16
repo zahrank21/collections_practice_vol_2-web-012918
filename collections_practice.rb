@@ -16,5 +16,6 @@ end
 
 def count_elements(arr)
   counter_hash = Hash.new(0)
-  arr.each
+  arr.each {|el|
+  counter_hash[el] += 1}
 end
