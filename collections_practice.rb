@@ -22,4 +22,5 @@ def count_elements(arr)
   counter_hash.each do |name, count|
     result << {:name => name[:name], :count => count}
   end
+  result
 end
